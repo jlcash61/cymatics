@@ -1,5 +1,6 @@
 let particles, sliders, m, n, a, b;
 
+
 // vibration strength params
 let A = 0.02;
 let minWalk = 0.002;
@@ -10,7 +11,14 @@ const settings = {
   drawHeatmap : false
 }
 
+
+
 const pi = 3.1415926535;
+const baseFrequency = 20; // Hz
+
+const calculateFrequency = (m, n) => {
+  return baseFrequency * m * n;
+}
 
 // chladni 2D closed-form solution - returns between -1 and 1
 const chladni = (x, y, a, b, m, n) => 
@@ -24,12 +32,30 @@ const DOMinit = () => {
 
   // sliders
   sliders = {
-    m : select('#mSlider'), // freq param 1
-    n : select('#nSlider'), // freq param 2
-    a : select('#aSlider'), // freq param 3
-    b:  select('#bSlider'), // freq param 4
-    v : select('#vSlider'), // velocity
-    num : select('#numSlider'), // number
+    m : {
+      slider: select('#mSlider'), // freq param 1
+      display: select('#mValue') // display element
+    },
+    n : {
+      slider: select('#nSlider'), // freq param 2
+      display: select('#nValue') // display element
+    },
+    a : {
+      slider: select('#aSlider'), // freq param 3
+      display: select('#aValue') // display element
+    },
+    b:{
+      slider: select('#bSlider'), // freq param 4
+      display: select('#bValue') // display element
+    },
+    v : {
+      slider: select('#vSlider'), // vibration strength
+      display: select('#vValue') // display element
+    },
+    num : {
+      slider: select('#numSlider'), // vibration strength
+      display: select('#npValue') // display element
+    }
   }
 }
 
@@ -100,14 +126,28 @@ const moveParticles = () => {
   }
 }
 
+
+
 const updateParams = () => {
-  m = sliders.m.value();
-  n = sliders.n.value();
-  a = sliders.a.value();
-  b = sliders.b.value()
-  v = sliders.v.value();
-  N = sliders.num.value();
+  m = sliders.m.slider.value();
+  sliders.m.display.html(m);
+  n = sliders.n.slider.value();
+  sliders.n.display.html(n);
+  a = sliders.a.slider.value();
+  sliders.a.display.html(a);
+  b = sliders.b.slider.value();
+  sliders.b.display.html(b);
+  v = sliders.v.slider.value();
+  sliders.v.display.html(v);
+  N = sliders.num.slider.value();
+  sliders.num.display.html(N);
+
+  let freq = calculateFrequency(m, n);
+  // Display the frequency somewhere
+  document.getElementById('freq').innerHTML = freq.toFixed(2) + ' Hz';
 }
+
+
 
 const drawHeatmap = () => {
   // draw the function heatmap in the background (not working)
@@ -124,10 +164,13 @@ const drawHeatmap = () => {
   }
 }
 
+
+
 const wipeScreen = () => {
   background(30);
   stroke(255);
 }
+
 
 
 /* Timing */
