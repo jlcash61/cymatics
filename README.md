@@ -4,15 +4,24 @@
   <img src="https://raw.githubusercontent.com/jlcash61/cymatics/main/src/cymaticssimulatorscreenshot.JPG" alt="Cymatics Simulator" style="max-width: 100%; height: auto;">
 </div>
 
-Welcome to the **Cymatics Simulator**! This tool helps you visualize the effects of sound waves on particles.
+<p style="text-align: center;">
+  Welcome to the <strong>Cymatics Simulator</strong>! This tool helps you visualize the effects of sound waves on particles.
+</p>
 
-## Features
+<p style="text-align: center;">
+  <a href="https://jlcash61.github.io/cymatics/" target="_blank">Check out the live demo here!</a>
+</p>
 
-- Visualize sound wave patterns
-- Adjust frequency and amplitude
-- Explore different mediums
+<h2>Features</h2>
+<ul>
+  <li>Visualize sound wave patterns</li>
+  <li>Adjust frequency and amplitude</li>
+  <li>Explore different mediums</li>
+</ul>
 
-## Usage
-
-1. Adjust settings to see different patterns.
-2. Save and share your results.
+<h2>Usage</h2>
+<ol>
+  <li>Upload your audio file.</li>
+  <li>Adjust settings to see different patterns.</li>
+  <li>Save and share your results.</li>
+</ol>
