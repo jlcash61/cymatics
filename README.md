@@ -6,7 +6,7 @@
     position: relative;
     width: 100%;
     height: 300px;
-    background: url(https://github.com/jlcash61/cymatics/blob/main/src/cymaticssimulatorscreenshot.JPG) no-repeat center center/cover;
+    background: url('https://github.com/jlcash61/cymatics/blob/main/src/cymaticssimulatorscreenshot.JPG') no-repeat center center/cover;
     color: white;
     text-align: center;
     display: flex;
