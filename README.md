@@ -1,8 +1,10 @@
-# Cymatics Simulator
+<h1 style="text-align: center;">Cymatics Simulator</h1>
 
-![Cymatics Simulator](https://raw.githubusercontent.com/jlcash61/cymatics/main/src/cymaticssimulatorscreenshot.JPG)
+<div style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/jlcash61/cymatics/main/src/cymaticssimulatorscreenshot.JPG" alt="Cymatics Simulator" style="max-width: 100%; height: auto;">
+</div>
 
-Welcome to the Cymatics Simulator! This tool helps you visualize the effects of sound waves on particles.
+Welcome to the **Cymatics Simulator**! This tool helps you visualize the effects of sound waves on particles.
 
 ## Features
 
@@ -12,6 +14,5 @@ Welcome to the Cymatics Simulator! This tool helps you visualize the effects of 
 
 ## Usage
 
-1. Upload your audio file.
-2. Adjust settings to see different patterns.
-3. Save and share your results.
+1. Adjust settings to see different patterns.
+2. Save and share your results.
