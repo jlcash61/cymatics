@@ -15,7 +15,7 @@
 
 <h2>Usage</h2>
 <ol>
-  <li>Upload your audio file.</li>
+  
   <li>Adjust settings to see different patterns.</li>
   <li>Save and share your results.</li>
 </ol>
